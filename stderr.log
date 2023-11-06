@@ -1,0 +1,1006 @@
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/image/finalfinal.png
+Not Found: /static/assates/image/finalfinal.png
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/image/finalfinal.png
+Not Found: /static/assates/image/finalfinal.png
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/image/finalfinal.png
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f7d77fb29a0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /Insertproposal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f7d77fb29a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/FPPMS/views.py", line 42, in insertproposal
+    read=requests.post('http://127.0.0.1:8000/Insertproposal',json=data,headers=headers)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /Insertproposal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f7d77fb29a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/FPPMS/views.py", line 42, in insertproposal
+    read=requests.post('www.fanshaweprojectproposal.ca/Insertproposal',json=data,headers=headers)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 456, in prepare_request
+    p.prepare(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/models.py", line 390, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'www.fanshaweprojectproposal.ca/Insertproposal': No schema supplied. Perhaps you meant http://www.fanshaweprojectproposal.ca/Insertproposal?
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/FPPMS/views.py", line 42, in insertproposal
+    read=requests.post('http://www.fanshaweprojectproposal.ca/Insertproposal',json=data,headers=headers)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 456, in prepare_request
+    p.prepare(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/models.py", line 390, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL 'www.fanshaweprojectproposal.ca/Insertproposal': No schema supplied. Perhaps you meant http://www.fanshaweprojectproposal.ca/Insertproposal?
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 464, in connect
+    _match_hostname(cert, self.assert_hostname or server_hostname)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 512, in _match_hostname
+    match_hostname(cert, asserted_hostname)
+  File "/opt/alt/python38/lib64/python3.8/ssl.py", line 416, in match_hostname
+    raise CertificateError("hostname %r "
+ssl.SSLCertVerificationError: ("hostname 'www.fanshaweprojectproposal.ca' doesn't match either of '*.greengeeks.net', 'greengeeks.net'",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.fanshaweprojectproposal.ca', port=443): Max retries exceeded with url: /Insertproposal (Caused by SSLError(SSLCertVerificationError("hostname 'www.fanshaweprojectproposal.ca' doesn't match either of '*.greengeeks.net', 'greengeeks.net'")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/FPPMS/views.py", line 42, in insertproposal
+    read=requests.post('https://www.fanshaweprojectproposal.ca/Insertproposal',json=data,headers=headers)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='www.fanshaweprojectproposal.ca', port=443): Max retries exceeded with url: /Insertproposal (Caused by SSLError(SSLCertVerificationError("hostname 'www.fanshaweprojectproposal.ca' doesn't match either of '*.greengeeks.net', 'greengeeks.net'")))
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 464, in connect
+    _match_hostname(cert, self.assert_hostname or server_hostname)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 512, in _match_hostname
+    match_hostname(cert, asserted_hostname)
+  File "/opt/alt/python38/lib64/python3.8/ssl.py", line 416, in match_hostname
+    raise CertificateError("hostname %r "
+ssl.SSLCertVerificationError: ("hostname 'www.fanshaweprojectproposal.ca' doesn't match either of '*.greengeeks.net', 'greengeeks.net'",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='www.fanshaweprojectproposal.ca', port=443): Max retries exceeded with url: /Insertproposal (Caused by SSLError(SSLCertVerificationError("hostname 'www.fanshaweprojectproposal.ca' doesn't match either of '*.greengeeks.net', 'greengeeks.net'")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/FPPMS/views.py", line 42, in insertproposal
+    read=requests.post('https://www.fanshaweprojectproposal.ca/Insertproposal',json=data,headers=headers)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='www.fanshaweprojectproposal.ca', port=443): Max retries exceeded with url: /Insertproposal (Caused by SSLError(SSLCertVerificationError("hostname 'www.fanshaweprojectproposal.ca' doesn't match either of '*.greengeeks.net', 'greengeeks.net'")))
+Not Found: /favicon.ico
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /static/js/main.js
+Not Found: /static/css/style.css
+Not Found: /static/789.jpg
+Not Found: /static/img/avatar.svg
+Not Found: /static/js/main.js
+Not Found: /static/css/style.css
+Not Found: /static/js/main.js
+Not Found: /static/img/avatar.svg
+Not Found: /static/789.jpg
+Not Found: /static/img/avatar.svg
+Not Found: /static/js/main.js
+Not Found: /favicon.ico
+Not Found: /static/css/style.css
+Not Found: /static/js/main.js
+Not Found: /static/img/avatar.svg
+Not Found: /static/789.jpg
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/FPPMS/views.py", line 42, in insertproposal
+    read=requests.post('/Insertproposal',json=data,headers=headers)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 456, in prepare_request
+    p.prepare(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/models.py", line 390, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '/Insertproposal': No schema supplied. Perhaps you meant http:///Insertproposal?
+Not Found: /favicon.ico
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /favicon.ico
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/css/style.css
+Not Found: /static/789.jpg
+Not Found: /static/js/main.js
+Not Found: /static/img/avatar.svg
+Not Found: /static/789.jpg
+Not Found: /static/css/style.css
+Not Found: /static/img/avatar.svg
+Not Found: /static/js/main.js
+Not Found: /static/789.jpg
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /favicon.ico
+Not Found: /static/css/style.css
+Not Found: /static/789.jpg
+Not Found: /static/js/main.js
+Not Found: /static/img/avatar.svg
+Not Found: /static/css/style.css
+Not Found: /static/img/avatar.svg
+Not Found: /static/789.jpg
+Not Found: /static/js/main.js
+Not Found: /static/css/style.css
+Not Found: /static/789.jpg
+Not Found: /static/js/main.js
+Not Found: /static/img/avatar.svg
+Not Found: /static/css/style.css
+Not Found: /static/js/main.js
+Not Found: /static/789.jpg
+Not Found: /static/img/avatar.svg
+Not Found: /static/789.jpg
+Not Found: /static/img/avatar.svg
+Not Found: /static/css/style.css
+Not Found: /static/789.jpg
+Not Found: /static/js/main.js
+Not Found: /static/img/avatar.svg
+Not Found: /static/789.jpg
+Not Found: /static/img/avatar.svg
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/css/style.css
+Not Found: /static/js/main.js
+Not Found: /static/img/avatar.svg
+Not Found: /static/789.jpg
+Not Found: /static/css/style.css
+Not Found: /favicon.ico
+Internal Server Error: /proposals
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fab0e094fd0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /displayProposal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fab0e094fd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/adminportal/views.py", line 31, in displayProposalList
+    callapi = requests.get('http://127.0.0.1:8000/displayProposal')
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /displayProposal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fab0e094fd0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Internal Server Error: /proposals
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f004aaab7f0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /displayProposal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f004aaab7f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/adminportal/views.py", line 31, in displayProposalList
+    callapi = requests.get('http://127.0.0.1:8000/displayProposal')
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /displayProposal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f004aaab7f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Not Found: /favicon.ico
+Internal Server Error: /proposals
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f004aaab7f0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /displayProposal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f004aaab7f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/adminportal/views.py", line 31, in displayProposalList
+    callapi = requests.get('http://127.0.0.1:8000/displayProposal')
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /displayProposal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f004aaab7f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/FPPMS/views.py", line 42, in insertproposal
+    read=requests.post('184.107.41.83/Insertproposal',json=data,headers=headers)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 456, in prepare_request
+    p.prepare(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/models.py", line 390, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '184.107.41.83/Insertproposal': No schema supplied. Perhaps you meant http://184.107.41.83/Insertproposal?
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 464, in connect
+    _match_hostname(cert, self.assert_hostname or server_hostname)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 512, in _match_hostname
+    match_hostname(cert, asserted_hostname)
+  File "/opt/alt/python38/lib64/python3.8/ssl.py", line 416, in match_hostname
+    raise CertificateError("hostname %r "
+ssl.SSLCertVerificationError: ("hostname '184.107.41.83' doesn't match either of '*.greengeeks.net', 'greengeeks.net'",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='184.107.41.83', port=443): Max retries exceeded with url: /Insertproposal (Caused by SSLError(SSLCertVerificationError("hostname '184.107.41.83' doesn't match either of '*.greengeeks.net', 'greengeeks.net'")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/FPPMS/views.py", line 42, in insertproposal
+    read=requests.post('https://184.107.41.83/Insertproposal',json=data,headers=headers)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='184.107.41.83', port=443): Max retries exceeded with url: /Insertproposal (Caused by SSLError(SSLCertVerificationError("hostname '184.107.41.83' doesn't match either of '*.greengeeks.net', 'greengeeks.net'")))
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 382, in _make_request
+    self._validate_conn(conn)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 1010, in _validate_conn
+    conn.connect()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 464, in connect
+    _match_hostname(cert, self.assert_hostname or server_hostname)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 512, in _match_hostname
+    match_hostname(cert, asserted_hostname)
+  File "/opt/alt/python38/lib64/python3.8/ssl.py", line 416, in match_hostname
+    raise CertificateError("hostname %r "
+ssl.SSLCertVerificationError: ("hostname '184.107.41.83' doesn't match either of '*.greengeeks.net', 'greengeeks.net'",)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='184.107.41.83', port=443): Max retries exceeded with url: /Insertproposal (Caused by SSLError(SSLCertVerificationError("hostname '184.107.41.83' doesn't match either of '*.greengeeks.net', 'greengeeks.net'")))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/FPPMS/views.py", line 42, in insertproposal
+    read=requests.post('http://184.107.41.83/Insertproposal',json=data,headers=headers)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 117, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 514, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='184.107.41.83', port=443): Max retries exceeded with url: /Insertproposal (Caused by SSLError(SSLCertVerificationError("hostname '184.107.41.83' doesn't match either of '*.greengeeks.net', 'greengeeks.net'")))
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Internal Server Error: /proposals
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 169, in _new_conn
+    conn = connection.create_connection(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/connection.py", line 96, in create_connection
+    raise err
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/connection.py", line 86, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 394, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 234, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1255, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1301, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1250, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 1010, in _send_output
+    self.send(msg)
+  File "/opt/alt/python38/lib64/python3.8/http/client.py", line 950, in send
+    self.connect()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 200, in connect
+    conn = self._new_conn()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connection.py", line 181, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7f24a3be07f0>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/urllib3/util/retry.py", line 574, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /displayProposal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f24a3be07f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/adminportal/views.py", line 31, in displayProposalList
+    callapi = requests.get('http://127.0.0.1:8000/displayProposal')
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=8000): Max retries exceeded with url: /displayProposal (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f24a3be07f0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Internal Server Error: /proposals
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/adminportal/views.py", line 31, in displayProposalList
+    callapi = requests.get('/displayProposal')
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 456, in prepare_request
+    p.prepare(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/models.py", line 390, in prepare_url
+    raise MissingSchema(error)
+requests.exceptions.MissingSchema: Invalid URL '/displayProposal': No schema supplied. Perhaps you meant http:///displayProposal?
+Internal Server Error: /proposals
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/adminportal/views.py", line 31, in displayProposalList
+    callapi = requests.get('https:///displayProposal')
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 528, in request
+    prep = self.prepare_request(req)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/sessions.py", line 456, in prepare_request
+    p.prepare(
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/models.py", line 316, in prepare
+    self.prepare_url(url, params)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/requests/models.py", line 393, in prepare_url
+    raise InvalidURL("Invalid URL %r: No host supplied" % url)
+requests.exceptions.InvalidURL: Invalid URL 'https:///displayProposal': No host supplied
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/FPPMS/views.py", line 42, in insertproposal
+    saveserialize=Proposalserialize(data=request.data)
+AttributeError: 'WSGIRequest' object has no attribute 'data'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/FPPMS/views.py", line 43, in insertproposal
+    read = saveserialize.save()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/rest_framework/serializers.py", line 173, in save
+    assert hasattr(self, '_errors'), (
+AssertionError: You must call `.is_valid()` before calling `.save()`.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/FPPMS/views.py", line 43, in insertproposal
+    if saveserialize.is_valid():
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/FPPMS/views.py", line 43, in insertproposal
+    if saveserialize.is_valid():
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/rest_framework/serializers.py", line 213, in is_valid
+    assert hasattr(self, 'initial_data'), (
+AssertionError: Cannot call `.is_valid()` as no `data=` keyword argument was passed when instantiating the serializer instance.
+Internal Server Error: /forgotpasswordlink
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.ProgrammingError: (1146, "Table 'fanshawe_FPPMS.PasswordReset' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/adminlogin/views.py", line 100, in subscribe
+    token ,id = getAndsaveToken(recepient)
+  File "/home/fanshawe/FPPMS/adminlogin/views.py", line 79, in getAndsaveToken
+    if not passwordreset.objects.filter(userid=curuser.id).exists():
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 808, in exists
+    return self.query.has_results(using=self.db)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/models/sql/query.py", line 552, in has_results
+    return compiler.has_results()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1145, in has_results
+    return bool(self.execute_sql(SINGLE))
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1175, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/backends/utils.py", line 98, in execute
+    return super().execute(sql, params)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/backends/utils.py", line 66, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/backends/utils.py", line 75, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/backends/utils.py", line 84, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/backends/mysql/base.py", line 73, in execute
+    return self.cursor.execute(query, args)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/connections.py", line 725, in _read_packet
+    packet.raise_for_error()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/protocol.py", line 221, in raise_for_error
+    err.raise_mysql_exception(self._data)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/pymysql/err.py", line 143, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.ProgrammingError: (1146, "Table 'fanshawe_FPPMS.PasswordReset' doesn't exist")
+current user drashtikasundra0@gmail.com 4
+Not Found: /favicon.ico
+current user drashtikasundra0@gmail.com 4
+id 4 token 77b6c268fc1711eb96200cc47a6f0376
+password changed!
+id 4 token 77b6c268fc1711eb96200cc47a6f0376
+password changed!
+id 4 token 77b6c268fc1711eb96200cc47a6f0376
+password changed!
+Not Found: /favicon.ico
+Internal Server Error: /updateProposal/5
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/utils/datastructures.py", line 76, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'fname'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/adminportal/views.py", line 97, in update
+    payload['fname'] = request.POST["fname"]
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/utils/datastructures.py", line 78, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'fname'
+Internal Server Error: /forgotpasswordlink
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/adminlogin/views.py", line 100, in subscribe
+    token ,id = getAndsaveToken(recepient)
+  File "/home/fanshawe/FPPMS/adminlogin/views.py", line 76, in getAndsaveToken
+    curuser = User.objects.get(email=input)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+Internal Server Error: /forgotpasswordlink
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/adminlogin/views.py", line 100, in subscribe
+    token ,id = getAndsaveToken(recepient)
+  File "/home/fanshawe/FPPMS/adminlogin/views.py", line 76, in getAndsaveToken
+    curuser = User.objects.get(email=input)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+current user drashtikasundra0@gmail.com 4
+Internal Server Error: /forgotpasswordlink
+Traceback (most recent call last):
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/fanshawe/FPPMS/adminlogin/views.py", line 102, in subscribe
+    send_mail(subject,
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/mail/__init__.py", line 61, in send_mail
+    return mail.send()
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/mail/message.py", line 284, in send
+    return self.get_connection(fail_silently).send_messages([self])
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 109, in send_messages
+    sent = self._send(message)
+  File "/home/fanshawe/virtualenv/FPPMS/3.8/lib/python3.8/site-packages/django/core/mail/backends/smtp.py", line 125, in _send
+    self.connection.sendmail(from_email, recipients, message.as_bytes(linesep='\r\n'))
+  File "/opt/alt/python38/lib64/python3.8/smtplib.py", line 886, in sendmail
+    (code, resp) = self.data(msg)
+  File "/opt/alt/python38/lib64/python3.8/smtplib.py", line 564, in data
+    raise SMTPDataError(code, repl)
+smtplib.SMTPDataError: (421, b'4.3.0 Temporary System Problem.  Try again later (10). h16sm565833qtx.23 - gsmtp')
+current user admin@fanshaweprojectproposal.ca 5
+current user admin@fanshaweprojectproposal.ca 5
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /AboutUs
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+id 4 token 77b6c268fc1711eb96200cc47a6f0376
+id 5 token 9d40c216fc1e11ebaa970cc47a6f0376
+password changed!
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+id 4 token 77b6c268fc1711eb96200cc47a6f0376
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /favicon.ico
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
+Not Found: /static/assates/js/footer/js/jquery-3.6.0.min.js.js
+Not Found: /static/assates/js/footer/js/bootstrap.min.js
